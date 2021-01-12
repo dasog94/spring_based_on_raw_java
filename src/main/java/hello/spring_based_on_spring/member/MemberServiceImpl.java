@@ -1,9 +1,12 @@
-package hello.spring_based_on_raw_java.member;
+package hello.spring_based_on_spring.member;
 
 public class MemberServiceImpl implements MemberService {
 
-    // DIP 위반함
-   private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
+
+    public MemberServiceImpl(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     @Override
     public void join(Member member) {

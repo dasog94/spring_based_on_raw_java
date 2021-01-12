@@ -1,9 +1,9 @@
-package hello.spring_based_on_raw_java.discount;
+package hello.spring_based_on_spring.discount;
 
-import hello.spring_based_on_raw_java.member.Grade;
-import hello.spring_based_on_raw_java.member.Member;
+import hello.spring_based_on_spring.member.Grade;
+import hello.spring_based_on_spring.member.Member;
 
-public class FixDiscountPolicy implements Discountpolicy {
+public class FixDiscountPolicy implements DiscountPolicy {
 
     private int discountFixAmount = 1000; //1000원 할인
 

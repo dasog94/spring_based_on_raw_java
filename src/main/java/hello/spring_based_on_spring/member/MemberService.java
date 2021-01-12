@@ -1,4 +1,4 @@
-package hello.spring_based_on_raw_java.member;
+package hello.spring_based_on_spring.member;
 
 public interface MemberService {
 
